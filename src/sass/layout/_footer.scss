@@ -4,10 +4,10 @@
     background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
     padding: 35rem 10rem 20rem 10rem;
 
-    -webkit-clip-path: polygon(0 0, 100% 20vh, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 20vh, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 16vh, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 16vh, 100% 100%, 0 100%);
 
-    margin-top: -30vh;
+    margin-top: -23vh;
 
     @include respond(tab-land) {
         -webkit-clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 100%);
@@ -41,6 +41,11 @@
 
         @include respond(phone-vs) {
             top: 25%;
+        }
+
+        &--up-icon:hover{
+            color: #000;
+            transform: none;
         }
 
         &--logo {
