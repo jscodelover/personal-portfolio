@@ -1,0 +1,65 @@
+// for github pages images: https://redvanisation.github.io/personal-portfolio/
+
+.parallax {
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    (max-resolution: 192dpi) and (min-width: 125em) {
+        background-image: $gradient1 , url('https://redvanisation.github.io/personal-portfolio/img/background/nyc-2x.jpg');
+   }
+    background-image: $gradient1, url('https://redvanisation.github.io/personal-portfolio/img/background/nyc-1x.jpg');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 130vh;
+    margin-top: -15vh;
+    // transform: skewY(-12deg);
+    // position: relative;
+    // z-index: 9999;
+
+    @include respond(tab-land) {
+        height: 80vh;
+    }
+
+    @include respond(tab-port) {
+        height: 100vh;
+    }
+}
+
+.parallax2 {
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    (max-resolution: 192dpi) and (min-width: 125em) {
+        background-image: $gradient1, url('https://redvanisation.github.io/personal-portfolio/img/background/dev-2x.jpg');
+   }
+
+   background-image: $gradient1, url('https://redvanisation.github.io/personal-portfolio/img/background/dev-1x.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 130vh;
+    -webkit-clip-path: polygon(0 0, 100% 20vh, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 20vh, 100% 100%, 0 100%);
+    margin-top: -35vh;
+
+
+
+    @include respond(tab-land) {
+        height: 80vh;
+        -webkit-clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 100%);
+    }
+
+    @include respond(tab-port) {
+        height: 100vh;
+        -webkit-clip-path: polygon(0 0, 100% 12vh, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 12vh, 100% 100%, 0 100%);
+    }
+
+    @include respond(phone) {
+        -webkit-clip-path: polygon(0 0, 100% 7vh, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 7vh, 100% 100%, 0 100%);
+    }
+}

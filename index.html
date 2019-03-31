@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JsCodeLover</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Raleway:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="dist/css/fontello-codes.css">
+    <link rel="stylesheet" href="dist/css/fontello-embedded.css">
+    <link rel="stylesheet" href="dist/css/fontello-ie7-codes.css">
+    <link rel="stylesheet" href="dist/css/fontello-ie7.css">
+    <link rel="stylesheet" href="dist/css/fontello.css">
+    <link rel="stylesheet" href="dist/css/animation.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="dist/css/main.comp.css"> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="dist/css/main.css">
+</head>
+
+<body>
+
+    <!-- Navigation menu with checkbox hack -->
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#section-about" class="navigation__link">About</a>
+                </li>
+                <li class="navigation__item">                    
+                    <a href="#section-projects" class="navigation__link">Projects</a>
+                </li>
+                <li class="navigation__item">
+                        <a href="#section-skills" class="navigation__link">Stack</a>
+                </li>
+                <li class="navigation__item">
+                        <a href="#section-contact" class="navigation__link">Contact</a>
+                </li>
+                <li class="navigation__item">
+                        <a href="#" class="navigation__link">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <header class="header" id="#top">
+        <div class="header__logo-box">
+            <a href="#footer" class="header__logo-box--link">
+                <img src="img/logo/mylogo.png" alt="Logo" class="header__logo-box--logo">
+            </a>
+        </div>
+        <div class="header__box">
+            <!-- <h1 class="heading-primary">
+                <span class="heading-primary--h1">Hello I'm <span class="heading-primary--highlight"> Redvan</span>!</span> 
+                <span class="heading-primary--text">a creative and passionate web developer based in <span class="heading-primary--highlight"> New York city</span></span>
+            </h1> -->
+            <h1 class="heading-primary">
+                <span class="heading-primary--text">I didn't invent the internet</span> 
+                <span class="heading-primary--h1">I just make it <span class="heading-primary--highlight">look good</span></span>
+            </h1>
+        </div>
+        <a href="#section-about" class="btn btn-white btn-header">Find out more &darr;</a>
+    </header>
+    <section class="section section-about">
+        <h2 class="heading-secondary heading-secondary__white margin-bottom-medium" data-scroll id="section-about">
+            About me
+        </h2>
+        <div class="section-about__container">
+            <!-- <h3 class="section-about__h3">Manisha</h3> -->
+            
+            <div class="section-about__picture-container">
+                <img srcset="img/html-imgs/myPhoto.jpg 300w, img/html-imgs/myPhoto.jpg 960w"
+                sizes="(max-width: 900px) 28vw, (max-width: 600px) 25vw, 300px" src="img/html-imgs/myPhoto.jpg" alt="Picture of Manisha" class="section-about__picture ">
+            </div>
+
+            <div class="section-about__text ">
+                <p>My name is Manisha Basra. I love being a developer. I love learning new things every day and creating something new every day! I am a creative person with the mind of a techie so web dev is my true calling!</p>
+                <p>I'm an aspiring web developer with 7 months of experience</p>
+                <p>I design and develop responsive content using the most current and modern technologies to provide the best user experience while satisfying customer needs. </p>
+                <p>I enjoy challenges and always look for good opportunities to develop my skills.</p>
+                <br>
+            </div>
+            <div class="section-about__btn-container">
+                <a href="about.html" target="_blank" class="btn btn-dark btn__about">More About Me &rarr;</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- section for adding parallax effect later with JS -->
+    <section class="section parallax">
+        &nbsp;
+    </section>
+
+    <section class="section section-projects" >
+        <h2 class="heading-secondary__white heading-secondary margin-bottom-big" data-scroll id="section-projects">Featured Work</h2>
+        <div class="row">
+            <div class="col-1-of-2 card">
+                    <img srcset="img/html-imgs/DevDesk.png 300w, img/html-imgs/DevDesk.png 960w"
+                sizes="(max-width: 900px) 28vw, (max-width: 600px) 25vw, 300px" src="img/html-imgs/DevDesk.png" alt="Dev Desk" class="card__img">
+
+                    <figcaption class="card__description">
+                        <div class="card__title">
+                            Dev Desk
+                        </div>    
+                        <a href="https://redvanisation.github.io/door-delivery/" class="card__icons--link" target="_blank">
+                            Progressive Web App Made as a Practice. It web app like slack with awesome feature like channel creation, adding channel and direct message to your favourite, basic markdown and keyboard short cut editor and many more.</a>
+                        <div class="card__icons"> 
+                            <a href="#" class="card__icons--link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <!-- <a href="#" class="card__icons--link" target="_blank"><i class="fab fa-github"></i></a> -->
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-1-of-2">
+                <figure class="card">
+                    <img srcset="img/html-imgs/DocCreator.png 300w, img/html-imgs/DocCreator.png 960w"
+                sizes="(max-width: 900px) 28vw, (max-width: 600px) 25vw, 300px" src="img/html-imgs/DocCreator.png" alt="Doc Creator" class="card__img">
+                    <figcaption class="card__description">
+                        <div class="card__title">
+                            Doc Creator
+                        </div>    
+                        <a href="https://redvanisation.github.io/currencyconverter/" class="card__icons--link" target="_blank">
+                            Website in which more than 1 user can build the doc by sharing the link or profile. Its give us information about how many users are working on particular doc. It uses ace editor for the editor.
+                        </a>
+                        <div class="card__icons"> 
+                            <a href="https://redvanisation.github.io/currencyconverter/" class="card__icons--link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Redvanisation/currencyconverter" class="card__icons--link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-1-of-2">
+                    <figure class="card">
+                        <img srcset="img/html-imgs/VsCode.png 300w, img/html-imgs/VsCode.png 960w"
+                sizes="(max-width: 900px) 28vw, (max-width: 600px) 25vw, 300px" src="img/html-imgs/VsCode.png" alt="VsCode Extension" class="card__img">
+                        <figcaption class="card__description">
+                            <div class="card__title">
+                                VsCode Extension
+                            </div>     
+                            <a href="https://redvanisation.github.io/the-reds-wiki/" class="card__icons--link" target="_blank">   
+                                JavaScript Extension that has snippet for es6 syntax. Used by more than 500 users. 
+                            </a>
+                            <div class="card__icons"> 
+                                <a href="https://redvanisation.github.io/the-reds-wiki/" class="card__icons--link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Redvanisation/the-reds-wiki" class="card__icons--link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-1-of-2">
+                    <figure class="card">
+                        <img srcset="img/html-imgs/MultiPlayer.png 300w, img/html-imgs/MultiPlayer.png 960w"
+                sizes="(max-width: 900px) 28vw, (max-width: 600px) 25vw, 300px" src="img/html-imgs/MultiPlayer.png" alt="MultiPlayer Game" class="card__img">
+                        <figcaption class="card__description">
+                            <div class="card__title">
+                                Multi-Player Game 
+                            </div>
+                            <a href="https://redvanisation.github.io/my-weather/" class="card__icons--link" target="_blank">
+                                Web Game build using socket.io. It add players while gaming and show the status of those who leaves.
+                            </a>
+                            <div class="card__icons"> 
+                                <a href="https://redvanisation.github.io/my-weather/" class="card__icons--link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Redvanisation/weather-app" class="card__icons--link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+        </div>
+        <a href="projects.html" class="btn btn-white btn-projects">More Projects &rAarr; </a>
+    </section>
+
+    <section class="section section-skills">
+        <h2 class="heading-secondary heading-secondary__white margin-bottom-medium" data-scroll id="section-skills">
+            My Stack
+        </h2>
+        <div class="row">
+            <div class="section-skills__text">
+
+                <!-- I master cutting edge web technologies and I am ready to put my skills in use and help you develop the project you always wanted! I use a variety of the latest technologies from modern CSS, SASS, JavaScript and React to WordPress in the Front-end. I use Nodejs and PHP in the Back-end.  -->
+             
+                I am a fast learner who enjoys challenges and thrives in a fast paced, goal oriented environment. Currently have experience working with and have good to excellent skills in all the technologies and tools mentioned in this section: 
+
+                I am very passionate about learning new technologies and gaining new skills, so far I have good to excellent skills in all the below technologies and I am still learning! :) 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-2 ">
+                <h3 class="heading-tertiary heading-tertiary__white margin-bottom-medium">
+                    Design
+                </h3>
+                <div class="section-skills__icons skills-padding">
+                    <i class="devicon-html5-plain-wordmark" title="HTML5"></i>
+                    <i class="devicon-css3-plain-wordmark" title="CSS3"></i>
+                    <i class="devicon-sass-original" title="SASS"></i>
+                    <i class="devicon-bootstrap-plain-wordmark" title="BOOTSTRAP"></i>
+                </div>
+
+            </div>
+            <div class="col-1-of-2">
+                <h3 class="heading-tertiary heading-tertiary__white margin-bottom-medium">
+                    Front End
+                </h3>
+                <div class="section-skills__icons skills-padding">
+                    <i class="devicon-javascript-plain" title="JAVASCRIPT"></i>
+                    <i class="devicon-jquery-plain-wordmark" title="JQUERY"></i>
+                    <i class="devicon-react-original-wordmark" title="REACT"></i>
+                </div>  
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <h3 class="heading-tertiary heading-tertiary__white margin-bottom-medium">
+                    Back End
+                </h3>
+                <div class="section-skills__icons skills-padding">
+                    <i class="devicon-nodejs-plain-wordmark" title="NODE JS"></i>
+                    <i class="devicon-express-original-wordmark"title="EXPRESS JS"></i>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <h3 class="heading-tertiary heading-tertiary__white margin-bottom-medium">
+                    VCS and Tools
+                </h3>
+                <div class="section-skills__icons skills-padding">
+                    <i class="devicon-git-plain-wordmark" title="GIT"></i>
+                    <i class="devicon-github-original" title="GITHUB"></i>
+                    <i class="devicon-heroku-original-wordmark" title="HEROKU"></i>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- section for adding parallax effect later with JS -->
+    <section class="section parallax2">
+        &nbsp;
+    </section>
+
+    <section class="section section-contact">
+        <h2 class="heading-secondary heading-secondary__white margin-bottom-medium" data-scroll id="section-contact">
+            Contact
+        </h2>
+
+        <h3 class="section-contact__hire margin-bottom-small font-size-large">I'd Love To Hear From You.</h3>
+        <p class="font-size-small margin-bottom-small"> Send me a Email and I will get back to you as soon as possible. <br/> You can also just call, or text me, at the number below. </p>
+
+        <div class="row section-contact__steps">
+            <div class="col-1-of-3 section-contact__steps--step">
+                <h3 class="section-contact__steps--h3">Address</h3>
+                <p class="section-contact__steps--p">Sagar Pur, New Delhi</p>
+            </div>
+            <div class="col-1-of-3 section-contact__steps--step">
+
+                <h3 class="section-contact__steps--h3">Email me at </h3>
+                <p class="section-contact__steps--p">manisha4918@gmail.com</p>
+            </div>
+
+            <div class="col-1-of-3 section-contact__steps--step">
+                <h3 class="section-contact__steps--h3">Call Me At </h3>
+                <p class="section-contact__steps--p">(+91) 9821818733</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+
+        <div class="footer__up-box">
+                    
+            <a href="#top" title="top" class="footer__link--icon"><i class="fas fa-long-arrow-alt-up"></i></a>
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__icons">
+                    <a href="https://github.com/jscodelover" title="Github" target="_blank" class="footer__link--icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jscodelover/" title="LinkedIn" target="_blank" class="footer__link--icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://medium.com/@jscodelover" title="Medium" target="_blank" class="footer__link--icon"><i class="fab fa-medium"></i></a>
+                    <a href="https://angel.co/jscodelover" title="Angellist" target="_blank" class="footer__link--icon"><i class="fab fa-angellist"></i></a>
+                    <a href="https://codepen.io/jscodelover" title="Codepen" target="_blank" class="footer__link--icon"><i class="fab fa-codepen"></i></a>
+                    <a href="https://twitter.com/jscodelover" title="Twitter" target="_blank" class="footer__link--icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <div class="footer__text">
+                    <!-- <span class="footer__copyrights"> &copy; Copyrights <a href="https://github.com/Redvanisation" target="_blank" class="footer__link">Redvanisation</a> 2018</span>  -->
+                    This website was developed, using the latest of web technologies: <span class="footer__technologies"> HTML5, CSS3, SASS, and ES6 JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/dist/js/smooth-scroll.polyfills.min.js"></script>
+    <script src="/dist/js/index.js"></script>
+    <script>
+        	var scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 550
+            });
+    </script>
+</body>
+</html>

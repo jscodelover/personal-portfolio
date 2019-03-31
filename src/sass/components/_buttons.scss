@@ -1,0 +1,179 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 2rem 3rem;
+        border-radius: .5rem;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 900;
+        outline: none;
+        transition: all .3s;
+
+        @include respond(phone) {
+            font-size: 1rem;
+            margin-top: 2rem;
+        }
+
+    }
+
+    &:hover {
+        transform: rotate(5deg) translate(-50%, 2rem);         
+        box-shadow: 0 .6rem 2.5rem rgba($color-secondary, .5);
+
+    }
+
+    &:active {
+        transform: translate(-50%, -.3rem);
+        box-shadow: 0 .5rem 1rem rgba($color-secondary, .5);
+    }
+
+    &__arrow {
+        display: inline-block;
+
+        &--white {
+            top: 1.5rem;
+            left: 18rem;
+
+            @include respond(phone) {
+                margin-left: 1rem;
+
+            }
+        }
+
+    }
+
+    &--submit {
+        margin-top: 4rem;
+        transform: translate(0, 0);
+
+        &:hover {
+            transform: translate(.5rem, 1rem) rotate(5deg);
+        }
+
+        &:active {
+            transform: translate(0rem, .5rem) rotate(5deg);
+        }
+    }
+
+    &__about {
+        
+        display: inline-block;
+        margin-top: 1.5rem;
+ 
+
+        &:hover {
+            transform: rotate(6deg) translate(0, 1rem);         
+        }
+        
+        &:active {
+            transform: translate(0, .1rem);            
+        }
+    }
+
+}
+
+.btn-white {
+    background-color: transparent;
+    color: $color-grey-white;
+    border: 2px solid $color-secondary;
+
+
+}
+
+.btn-dark {
+    background-color: transparent;
+    color: $color-grey-white;
+    border: 2px solid $color-secondary;
+
+    // box-shadow: 0 1rem 2.5rem rgba($color-black, .5) !important;
+
+    &:hover {
+        box-shadow: 0 1rem 2rem rgba($color-secondary, .5) !important;
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-secondary, .5) !important;
+    }
+}
+
+.btn-header {
+    position: absolute;
+    top: 65vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    line-height: 2rem;
+
+    @include respond(tab-land) {
+        top: 58vh;
+    }
+}
+
+.btn-projects {
+
+    &:hover {
+        transform: skew(-5.5deg) translate(0, 1rem);
+    }
+
+    &:active {
+        transform: skew(-5.5deg) translate(0, 1.5rem);
+    }
+}
+
+.btn-contact {
+    &:hover {
+        transform: rotate(5.5deg) translate(0, 1rem);
+    }
+
+    &:active {
+        transform: rotate(5.5deg) translate(0, 1.5rem);
+    }
+}
+
+.btn-projects-page {
+
+    @include absCenter;
+    transform: translate(-50%, 200%);
+
+    &:hover {
+        transform: rotate(-5.5deg) translate(-50%, 200%);
+    }
+
+    &:active {
+        transform: rotate(-5.5deg) translate(-50%, 200%);
+    }
+}
+
+.btn-about-page {
+    
+    &:hover {
+        transform: rotate(-6deg) translate(0, 0);
+    }
+}
+
+.btn-back {
+    &,
+    &:link,
+    &:visited {
+        display: block;
+        width: 20rem;
+        text-align: center;
+        line-height: 1.6;
+        letter-spacing: .1rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        margin: 4rem auto;
+        font-size: $global-font-size;
+        color: $color-secondary;
+        transition: all .4s;
+        
+        &:hover {
+            text-decoration: none;
+            transform: scale(1.1);
+        }
+    }
+
+
+}
