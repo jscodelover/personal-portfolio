@@ -845,6 +845,9 @@ body {
     @media only screen and (max-width: 25.5em) {
       .footer__up-box {
         top: 25%; } }
+    .footer__up-box--up-icon:hover {
+      color: #000;
+      transform: none; }
     .footer__up-box--logo {
       max-width: 35rem;
       transition: all .3s;
