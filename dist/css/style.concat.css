@@ -27,18 +27,18 @@ body {
   color: #727271; }
 
 body {
-  font-family: 'Raleway', 'Lato', sans-serif; }
+  font-family: "Raleway", "Lato", sans-serif; }
 
 .heading-primary {
-  font-family: 'Lato', 'Raleway', sans-serif;
+  font-family: "Lato", "Raleway", sans-serif;
   color: #191919;
   width: 100%; }
   .heading-primary--h1 {
     display: inline-block;
     font-size: 5rem;
     text-transform: uppercase;
-    letter-spacing: .7rem;
-    margin-bottom: .2rem;
+    letter-spacing: 0.7rem;
+    margin-bottom: 0.2rem;
     padding: 1rem 3rem 1rem 2rem;
     font-weight: 800;
     background-color: rgba(239, 104, 23, 0.7); }
@@ -47,19 +47,19 @@ body {
         font-size: 4rem; } }
     @media only screen and (max-width: 46.875em) {
       .heading-primary--h1 {
-        letter-spacing: .2rem; } }
+        letter-spacing: 0.2rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--h1 {
         font-size: 3.2rem; } }
     @media only screen and (max-width: 700px) and (max-height: 400px) {
       .heading-primary--h1 {
         font-size: 3.2rem;
-        letter-spacing: .2rem; } }
+        letter-spacing: 0.2rem; } }
   .heading-primary--text {
     text-transform: uppercase;
     display: inline-block;
     line-height: 1.5;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     font-weight: 800;
     font-size: 5rem;
     background-color: rgba(239, 104, 23, 0.7);
@@ -78,23 +78,23 @@ body {
     @media only screen and (max-width: 37.5em) {
       .heading-primary--text {
         font-size: 2.1rem;
-        padding: 0 .3rem 0 .2rem;
+        padding: 0 0.3rem 0 0.2rem;
         width: 100%; } }
     @media only screen and (max-width: 700px) and (max-height: 400px) {
       .heading-primary--text {
         font-size: 3rem;
-        letter-spacing: .3rem;
+        letter-spacing: 0.3rem;
         margin-top: 2rem; } }
   .heading-primary--highlight {
     display: inline-block;
-    transition: all .3s;
+    transition: all 0.3s;
     margin-right: 1rem;
     color: #EBE9E9;
     text-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.4);
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
     border-radius: 3px; }
     .heading-primary--highlight:hover {
-      transform: scale(1.1) rotate(5deg); }
+      transform: scale(1.1) skewX(10deg) skewY(2deg); }
     @media only screen and (max-width: 56.25em) {
       .heading-primary--highlight {
         margin-right: 0; } }
@@ -109,7 +109,7 @@ body {
   line-height: 1.7;
   letter-spacing: 1rem;
   text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-  transition: all .3s; }
+  transition: all 0.3s; }
   @media only screen and (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2.8rem; } }
@@ -134,7 +134,7 @@ body {
   line-height: 1.7;
   letter-spacing: 1rem;
   text-shadow: 0 0.5rem 2.5rem rgba(114, 114, 113, 0.4);
-  transition: all .3s; }
+  transition: all 0.3s; }
   .heading-tertiary:hover {
     transform: scale(1.5);
     text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4); }
@@ -155,7 +155,7 @@ body {
     margin: 0 auto; }
 
 .section-about__text {
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   line-height: 1.2;
   text-align: left;
   font-weight: 400;
@@ -169,7 +169,7 @@ body {
     font-size: 1.7rem;
     color: #EBE9E9;
     line-height: 1.5;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     font-weight: 500; }
     @media only screen and (max-width: 46.875em) {
       .section-skills__text {
@@ -179,7 +179,7 @@ body {
   color: #EBE9E9; }
   .section-contact__hire {
     font-size: 2rem;
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
     font-weight: 200;
     text-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.4); }
   .section-contact__steps--step {
@@ -192,9 +192,9 @@ body {
     text-transform: uppercase; }
   .section-contact__steps--p {
     font-size: 1.5rem;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     line-height: 1.5;
-    font-family: 'Lato', sans-serif; }
+    font-family: "Lato", sans-serif; }
   .section-contact__steps--link, .section-contact__steps--link:link, .section-contact__steps--link:visited {
     text-transform: capitalize;
     color: #ef6817;
@@ -202,10 +202,10 @@ body {
     font-weight: 800;
     font-size: 2rem;
     display: inline-block;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     margin-top: 1rem;
     border-bottom: 1px solid transparent;
-    transition: all .3s; }
+    transition: all 0.3s; }
     .section-contact__steps--link:hover, .section-contact__steps--link:link:hover, .section-contact__steps--link:visited:hover {
       border-bottom: 1px solid #ef6817; }
 
@@ -217,7 +217,7 @@ body {
   .footer__text {
     text-align: center; }
   .footer__copyrights {
-    letter-spacing: .4rem; }
+    letter-spacing: 0.4rem; }
   .footer__link:link, .footer__link:visited, .footer__link:active {
     text-decoration: none;
     color: #ef6817;
@@ -252,17 +252,17 @@ body {
   text-align: left;
   line-height: 1.7;
   font-weight: 300;
-  letter-spacing: .2rem; }
+  letter-spacing: 0.2rem; }
 
 .about-main__ul {
   font-family: lato, sans-serif; }
   .about-main__ul--li {
     font-weight: 200;
-    letter-spacing: .1rem; }
+    letter-spacing: 0.1rem; }
 
 .about-main__action {
   font-style: italic;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   font-size: 2rem;
   font-weight: 500;
   text-transform: capitalize;
@@ -272,7 +272,7 @@ body {
     color: #ef6817;
     font-weight: 600;
     text-transform: capitalize;
-    transition: all .4s;
+    transition: all 0.4s;
     border-bottom: 2px solid transparent;
     display: inline-block;
     font-size: 3rem; }
@@ -286,7 +286,7 @@ body {
 .resume__menu {
   font-weight: 100;
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   text-decoration: none;
   color: #191919;
   font-size: 1.7rem;
@@ -298,14 +298,14 @@ body {
   .resume__body__head--h1 {
     text-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.4);
     font-weight: 300;
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
     text-transform: uppercase;
     font-size: 5rem;
     margin-bottom: 1rem; }
   .resume__body__head--h2 {
     text-shadow: 0 0.5rem 2.5rem rgba(114, 114, 113, 0.4);
     font-weight: 300;
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
     text-transform: uppercase;
     color: #727271;
     margin-left: 1.5rem; }
@@ -314,14 +314,14 @@ body {
   .resume__body__topic--h2 {
     text-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.4);
     font-weight: 300;
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
     text-transform: uppercase; }
   .resume__body__topic--h3, .resume__body__topic--h4 {
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     text-transform: uppercase; }
   .resume__body__topic--cer-title {
     text-transform: uppercase;
-    letter-spacing: .2rem; }
+    letter-spacing: 0.2rem; }
   .resume__body__topic--h4 {
     font-weight: 500;
     color: #575757; }
@@ -335,7 +335,7 @@ body {
   color: #EBE9E9; }
   .contact-page__hire-div--title {
     font-size: 2rem;
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
     font-weight: 400;
     line-height: 1.5; }
     @media only screen and (max-width: 37.5em) {
@@ -352,7 +352,7 @@ body {
     margin: 2rem auto;
     font-size: 2.5rem;
     text-transform: uppercase;
-    letter-spacing: .5rem; }
+    letter-spacing: 0.5rem; }
     @media only screen and (max-width: 25.5em) {
       .contact-page__hire-div--h3 {
         text-align: center; } }
@@ -361,17 +361,17 @@ body {
   .contact-page__hire-div--title-italic {
     font-style: italic;
     font-size: 2rem;
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
     font-weight: 600;
     margin-bottom: 2rem; }
   .contact-page__hire-div--p {
     font-size: 1.7rem;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     line-height: 1.6; }
   .contact-page__action-title {
     font-style: italic;
     font-size: 3rem;
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
     font-weight: 600; }
     .contact-page__action-title--highlight {
       color: #ef6817; }
@@ -381,7 +381,7 @@ body {
       text-transform: uppercase;
       display: inline-block;
       border-bottom: 2px solid transparent;
-      transition: all .3s; }
+      transition: all 0.3s; }
       .contact-page__action-title--link:hover, .contact-page__action-title--link:link:hover, .contact-page__action-title--link:visited:hover {
         transform: scale(1.1);
         border-bottom: 2px solid #ef6817; }
@@ -675,9 +675,9 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   height: 130vh;
-  -webkit-clip-path: polygon(0 0, 100% 20vh, 100% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 20vh, 100% 100%, 0 100%);
-  margin-top: -35vh; }
+  -webkit-clip-path: polygon(0 0, 100% 16vh, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 16vh, 100% 100%, 0 100%);
+  margin-top: -34vh; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (max-resolution: 192dpi) and (min-width: 125em) {
     .parallax2 {
       background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(33, 32, 31, 0.9)), url("https://redvanisation.github.io/personal-portfolio/img/background/dev-2x.jpg"); } }
@@ -816,9 +816,9 @@ body {
   position: relative;
   background-image: linear-gradient(to right bottom, #191919, #030202);
   padding: 35rem 10rem 20rem 10rem;
-  -webkit-clip-path: polygon(0 0, 100% 20vh, 100% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 20vh, 100% 100%, 0 100%);
-  margin-top: -30vh; }
+  -webkit-clip-path: polygon(0 0, 100% 16vh, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 16vh, 100% 100%, 0 100%);
+  margin-top: -23vh; }
   @media only screen and (max-width: 75em) {
     .footer {
       -webkit-clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 100%);
