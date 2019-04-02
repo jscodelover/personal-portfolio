@@ -407,16 +407,38 @@ body {
 .font-size-small {
   font-size: 2rem !important; }
 
+@keyframes btn-mask {
+  0% {
+    transform: translateX(-100%) rotate(45deg); }
+  100% {
+    transform: translateX(100%) rotate(45deg); } }
+
+@keyframes btn-text {
+  0% {
+    transform: translateX(0);
+    opacity: 1; }
+  100% {
+    transform: translateX(1rem);
+    opacity: 0; } }
+
+@keyframes btn-text-bis {
+  0% {
+    transform: translateX(-1rem);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
 .btn, .btn:link, .btn:visited {
   display: inline-block;
   text-transform: uppercase;
   padding: 2rem 3rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 900;
   outline: none;
-  transition: all .3s; }
+  transition: all 0.3s; }
   @media only screen and (max-width: 37.5em) {
     .btn, .btn:link, .btn:visited {
       font-size: 1rem;
@@ -510,16 +532,66 @@ body {
   width: 20rem;
   text-align: center;
   line-height: 1.6;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   text-transform: capitalize;
   font-weight: 600;
   margin: 4rem auto;
   font-size: 1.7rem;
   color: #ef6817;
-  transition: all .4s; }
+  transition: all 0.4s; }
   .btn-back:hover, .btn-back:link:hover, .btn-back:visited:hover {
     text-decoration: none;
     transform: scale(1.1); }
+
+.btnR {
+  user-select: none;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid;
+  font-size: 3.5rem;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0.6;
+  color: #fff; }
+  .btnR__text {
+    display: block;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-weight: bold; }
+    .btnR__text:before {
+      content: ""; }
+    .btnR__text--bis {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: translateX(-1rem);
+      opacity: 0; }
+  .btnR__mask {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ef6817;
+    transform: translateX(-100%) rotate(45deg);
+    transition: all 0.3s; }
+  .btnR:hover {
+    opacity: 1; }
+    .btnR:hover .btnR__text {
+      animation: btn-text 0.3s ease-out; }
+      .btnR:hover .btnR__text--bis {
+        animation: btn-text-bis 0.3s ease-out; }
+    .btnR:hover .btnR__mask {
+      animation: btn-mask 0.3s ease-out; }
+  .btnR:active {
+    opacity: 1;
+    background: #ef6817; }
 
 .navigation__checkbox {
   display: none; }
@@ -651,7 +723,7 @@ body {
   transform: rotate(-130deg); }
 
 .parallax {
-  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(33, 32, 31, 0.9)), url("https://redvanisation.github.io/personal-portfolio/img/background/nyc-1x.jpg");
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(33, 32, 31, 0.9)), url("../../img/background/nyc-1x.jpg");
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
@@ -660,7 +732,7 @@ body {
   margin-top: -15vh; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (max-resolution: 192dpi) and (min-width: 125em) {
     .parallax {
-      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(33, 32, 31, 0.9)), url("https://redvanisation.github.io/personal-portfolio/img/background/nyc-2x.jpg"); } }
+      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(33, 32, 31, 0.9)), url("../../img/background/nyc-2x.jpg"); } }
   @media only screen and (max-width: 75em) {
     .parallax {
       height: 80vh; } }
@@ -669,7 +741,8 @@ body {
       height: 100vh; } }
 
 .parallax2 {
-  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(33, 32, 31, 0.9)), url("https://redvanisation.github.io/personal-portfolio/img/background/dev-1x.jpg");
+  position: relative;
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(33, 32, 31, 0.9)), url("../../img/background/dev-1x.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -680,7 +753,7 @@ body {
   margin-top: -34vh; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (max-resolution: 192dpi) and (min-width: 125em) {
     .parallax2 {
-      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(33, 32, 31, 0.9)), url("https://redvanisation.github.io/personal-portfolio/img/background/dev-2x.jpg"); } }
+      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(33, 32, 31, 0.9)), url("../../img/background/dev-2x.jpg"); } }
   @media only screen and (max-width: 75em) {
     .parallax2 {
       height: 80vh;
@@ -1007,11 +1080,11 @@ body {
   .section-about__picture {
     border-radius: 3px;
     width: 25rem;
-    transition: all .3s;
+    transition: all 0.3s;
     margin: 2rem auto 3rem auto;
     float: right;
     outline: 0.4rem solid #727271;
-    outline-offset: .5rem; }
+    outline-offset: 0.5rem; }
     .section-about__picture:hover {
       transform: scale(1.05) translateY(-1rem);
       outline: 0.8rem solid #727271;
@@ -1080,7 +1153,7 @@ body {
     margin-left: 2rem;
     margin-right: 2rem;
     margin-bottom: 1rem;
-    transition: all .4s; }
+    transition: all 0.4s; }
     .section-skills [class^="devicon-"]:hover {
       transform: scale(1.5);
       color: #ef6817;
@@ -1092,7 +1165,7 @@ body {
     margin-left: 2rem;
     margin-right: 2rem;
     margin-bottom: 1rem;
-    transition: all .4s; }
+    transition: all 0.4s; }
     .section-skills [class^="fa-icon"]:hover {
       transform: scale(1.7);
       color: #ef6817;
@@ -1117,6 +1190,12 @@ body {
 @media only screen and (max-width: 25.5em) {
   .skills-padding {
     padding: 0 8rem 0 8rem; } }
+
+.section-resume {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-44%, -50%); }
 
 .section-contact {
   margin-top: -15vh;

@@ -1,179 +1,226 @@
 .btn {
-    &,
-    &:link,
-    &:visited {
-        display: inline-block;
-        text-transform: uppercase;
-        padding: 2rem 3rem;
-        border-radius: .5rem;
-        text-decoration: none;
-        font-size: 1.5rem;
-        font-weight: 900;
-        outline: none;
-        transition: all .3s;
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 2rem 3rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 900;
+    outline: none;
+    transition: all 0.3s;
 
-        @include respond(phone) {
-            font-size: 1rem;
-            margin-top: 2rem;
-        }
-
+    @include respond(phone) {
+      font-size: 1rem;
+      margin-top: 2rem;
     }
+  }
+
+  &:hover {
+    transform: rotate(5deg) translate(-50%, 2rem);
+    box-shadow: 0 0.6rem 2.5rem rgba($color-secondary, 0.5);
+  }
+
+  &:active {
+    transform: translate(-50%, -0.3rem);
+    box-shadow: 0 0.5rem 1rem rgba($color-secondary, 0.5);
+  }
+
+  &__arrow {
+    display: inline-block;
+
+    &--white {
+      top: 1.5rem;
+      left: 18rem;
+
+      @include respond(phone) {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  &--submit {
+    margin-top: 4rem;
+    transform: translate(0, 0);
 
     &:hover {
-        transform: rotate(5deg) translate(-50%, 2rem);         
-        box-shadow: 0 .6rem 2.5rem rgba($color-secondary, .5);
-
+      transform: translate(0.5rem, 1rem) rotate(5deg);
     }
 
     &:active {
-        transform: translate(-50%, -.3rem);
-        box-shadow: 0 .5rem 1rem rgba($color-secondary, .5);
+      transform: translate(0rem, 0.5rem) rotate(5deg);
+    }
+  }
+
+  &__about {
+    display: inline-block;
+    margin-top: 1.5rem;
+
+    &:hover {
+      transform: rotate(6deg) translate(0, 1rem);
     }
 
-    &__arrow {
-        display: inline-block;
-
-        &--white {
-            top: 1.5rem;
-            left: 18rem;
-
-            @include respond(phone) {
-                margin-left: 1rem;
-
-            }
-        }
-
+    &:active {
+      transform: translate(0, 0.1rem);
     }
-
-    &--submit {
-        margin-top: 4rem;
-        transform: translate(0, 0);
-
-        &:hover {
-            transform: translate(.5rem, 1rem) rotate(5deg);
-        }
-
-        &:active {
-            transform: translate(0rem, .5rem) rotate(5deg);
-        }
-    }
-
-    &__about {
-        
-        display: inline-block;
-        margin-top: 1.5rem;
- 
-
-        &:hover {
-            transform: rotate(6deg) translate(0, 1rem);         
-        }
-        
-        &:active {
-            transform: translate(0, .1rem);            
-        }
-    }
-
+  }
 }
 
 .btn-white {
-    background-color: transparent;
-    color: $color-grey-white;
-    border: 2px solid $color-secondary;
-
-
+  background-color: transparent;
+  color: $color-grey-white;
+  border: 2px solid $color-secondary;
 }
 
 .btn-dark {
-    background-color: transparent;
-    color: $color-grey-white;
-    border: 2px solid $color-secondary;
+  background-color: transparent;
+  color: $color-grey-white;
+  border: 2px solid $color-secondary;
 
-    // box-shadow: 0 1rem 2.5rem rgba($color-black, .5) !important;
+  // box-shadow: 0 1rem 2.5rem rgba($color-black, .5) !important;
 
-    &:hover {
-        box-shadow: 0 1rem 2rem rgba($color-secondary, .5) !important;
-    }
+  &:hover {
+    box-shadow: 0 1rem 2rem rgba($color-secondary, 0.5) !important;
+  }
 
-    &:active {
-        box-shadow: 0 .5rem 1rem rgba($color-secondary, .5) !important;
-    }
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($color-secondary, 0.5) !important;
+  }
 }
 
 .btn-header {
-    position: absolute;
-    top: 65vh;
-    left: 50%;
-    transform: translate(-50%, 0);
-    line-height: 2rem;
+  position: absolute;
+  top: 65vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+  line-height: 2rem;
 
-    @include respond(tab-land) {
-        top: 58vh;
-    }
+  @include respond(tab-land) {
+    top: 58vh;
+  }
 }
 
 .btn-projects {
+  &:hover {
+    transform: skew(-5.5deg) translate(0, 1rem);
+  }
 
-    &:hover {
-        transform: skew(-5.5deg) translate(0, 1rem);
-    }
-
-    &:active {
-        transform: skew(-5.5deg) translate(0, 1.5rem);
-    }
+  &:active {
+    transform: skew(-5.5deg) translate(0, 1.5rem);
+  }
 }
 
 .btn-contact {
-    &:hover {
-        transform: rotate(5.5deg) translate(0, 1rem);
-    }
+  &:hover {
+    transform: rotate(5.5deg) translate(0, 1rem);
+  }
 
-    &:active {
-        transform: rotate(5.5deg) translate(0, 1.5rem);
-    }
+  &:active {
+    transform: rotate(5.5deg) translate(0, 1.5rem);
+  }
 }
 
 .btn-projects-page {
+  @include absCenter;
+  transform: translate(-50%, 200%);
 
-    @include absCenter;
-    transform: translate(-50%, 200%);
+  &:hover {
+    transform: rotate(-5.5deg) translate(-50%, 200%);
+  }
 
-    &:hover {
-        transform: rotate(-5.5deg) translate(-50%, 200%);
-    }
-
-    &:active {
-        transform: rotate(-5.5deg) translate(-50%, 200%);
-    }
+  &:active {
+    transform: rotate(-5.5deg) translate(-50%, 200%);
+  }
 }
 
 .btn-about-page {
-    
-    &:hover {
-        transform: rotate(-6deg) translate(0, 0);
-    }
+  &:hover {
+    transform: rotate(-6deg) translate(0, 0);
+  }
 }
 
 .btn-back {
-    &,
-    &:link,
-    &:visited {
-        display: block;
-        width: 20rem;
-        text-align: center;
-        line-height: 1.6;
-        letter-spacing: .1rem;
-        text-transform: capitalize;
-        font-weight: 600;
-        margin: 4rem auto;
-        font-size: $global-font-size;
-        color: $color-secondary;
-        transition: all .4s;
-        
-        &:hover {
-            text-decoration: none;
-            transform: scale(1.1);
-        }
+  &,
+  &:link,
+  &:visited {
+    display: block;
+    width: 20rem;
+    text-align: center;
+    line-height: 1.6;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 4rem auto;
+    font-size: $global-font-size;
+    color: $color-secondary;
+    transition: all 0.4s;
+
+    &:hover {
+      text-decoration: none;
+      transform: scale(1.1);
     }
+  }
+}
 
+.btnR {
+  user-select: none;
+  display: inline-block;
+  text-decoration:none;
+  border: 2px solid;
+  font-size: 3.5rem;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0.6;
+  color: $color-white;
+  &__text {
+    display: block;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    &:before {
+      content: "";
+    }
+    &--bis {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: translateX(-1 * 1rem);
+      opacity: 0;
+    }
+  }
+  &__mask {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $color-secondary;
+    transform: translateX(-100%) rotate(45deg);
+    transition: all 0.3s;
+  }
+  &:hover {
+    opacity: 1;
+    .btnR__text {
+      animation: btn-text 0.3s ease-out;
+      &--bis {
+        animation: btn-text-bis 0.3s ease-out;
+      }
+    }
+    .btnR__mask {
+      animation: btn-mask 0.3s ease-out;
+    }
+  }
 
+  &:active {
+    opacity: 1;
+    background: $color-secondary;
+  }
 }
