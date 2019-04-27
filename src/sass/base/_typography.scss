@@ -191,6 +191,9 @@ body {
     font-family: lato;
     color: $color-grey-white;
     font-size: $global-font-size;
+    .txt-highlight{
+      color: $color-secondary;
+    }
   }
 }
 
@@ -225,6 +228,10 @@ body {
     &--step {
       margin: 1rem 0;
       text-align: center;
+      .icon{
+        color: $color-secondary;
+        font-size: 30px;
+      }
     }
 
     &--h3 {
