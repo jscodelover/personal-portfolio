@@ -2,9 +2,9 @@
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
     (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
     (max-resolution: 192dpi) and (min-width: 125em) {
-    background-image: $gradient1, url("../../img/background/nyc-2x.jpg");
+    background-image: $gradient1, url("/img/background/nyc-2x.jpg");
   }
-  background-image: $gradient1, url("../../img/background/nyc-1x.jpg");
+  background-image: $gradient1, url("/img/background/nyc-1x.jpg");
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
@@ -28,10 +28,10 @@
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
     (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
     (max-resolution: 192dpi) and (min-width: 125em) {
-    background-image: $gradient1, url("../../img/background/dev-2x.jpg");
+    background-image: $gradient1, url("/img/background/dev-2x.jpg");
   }
   position: relative;
-  background-image: $gradient1, url("../../img/background/dev-1x.jpg");
+  background-image: $gradient1, url("/img/background/dev-1x.jpg");
 
   background-size: cover;
   background-position: center;
